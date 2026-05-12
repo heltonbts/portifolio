@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helton Batista — Marketing & Growth</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Bebas Neue', 'sans-serif'],
+            body: ['Source Sans 3', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50:  '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Source Sans 3', sans-serif; }
+
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.10);
+    }
+
+    .instagram-btn {
+      transition: background 0.18s ease, color 0.18s ease;
+    }
+    .instagram-btn:hover {
+      background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: #fff;
+      border-color: transparent;
+    }
+
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+  <!-- ───── NAVBAR ───── -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <span class="font-display text-2xl tracking-wide text-brand-600">HB</span>
+      <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#clientes" class="hover:text-brand-600 transition-colors">Clientes</a>
+        <a href="#servicos" class="hover:text-brand-600 transition-colors">Serviços</a>
+        <a href="#contato" class="hover:text-brand-600 transition-colors">Contato</a>
+      </nav>
+      <a href="#contato"
+         class="text-sm font-semibold bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors">
+        Trabalhe comigo
+      </a>
+    </div>
+  </header>
+
+  <!-- ───── HERO ───── -->
+  <section class="max-w-6xl mx-auto px-6 pt-20 pb-16">
+    <div class="max-w-2xl">
+      <p class="text-brand-600 font-semibold text-sm uppercase tracking-widest mb-3">Marketing & Growth</p>
+      <h1 class="font-display text-6xl sm:text-7xl leading-none text-slate-900 mb-5">
+        HELTON<br/>BATISTA
+      </h1>
+      <p class="text-slate-500 text-lg leading-relaxed mb-8">
+        Especialista em marketing digital, tráfego pago, captação de leads,
+        edição de vídeo, roteiros e funis de vendas. Aqui você encontra
+        os parceiros que já confiaram no meu trabalho.
+      </p>
+      <div class="flex flex-wrap gap-2">
+        <span class="tag bg-indigo-50 text-indigo-700">Tráfego Pago</span>
+        <span class="tag bg-violet-50 text-violet-700">Funil de Vendas</span>
+        <span class="tag bg-sky-50 text-sky-700">Captação de Leads</span>
+        <span class="tag bg-pink-50 text-pink-700">Edição de Vídeo</span>
+        <span class="tag bg-amber-50 text-amber-700">Roteiro</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── SERVIÇOS ───── -->
+  <section id="servicos" class="bg-white border-y border-slate-100 py-14">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-display text-4xl text-slate-900 mb-10">O QUE EU FAÇO</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+
+        <div class="bg-indigo-50 rounded-xl p-5">
+          <div class="w-9 h-9 bg-indigo-600 rounded-lg flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <p class="font-semibold text-slate-800 text-sm">Tráfego Pago</p>
+          <p class="text-xs text-slate-500 mt-1">Meta Ads, Google Ads</p>
+        </div>
+
+        <div class="bg-violet-50 rounded-xl p-5">
+          <div class="w-9 h-9 bg-violet-600 rounded-lg flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <p class="font-semibold text-slate-800 text-sm">Funil de Vendas</p>
+          <p class="text-xs text-slate-500 mt-1">Da atração ao fechamento</p>
+        </div>
+
+        <div class="bg-sky-50 rounded-xl p-5">
+          <div class="w-9 h-9 bg-sky-600 rounded-lg flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <p class="font-semibold text-slate-800 text-sm">Captação</p>
+          <p class="text-xs text-slate-500 mt-1">Geração de leads</p>
+        </div>
+
+        <div class="bg-pink-50 rounded-xl p-5">
+          <div class="w-9 h-9 bg-pink-600 rounded-lg flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 10l4.553-2.069A1 1 0 0121 8.87v6.26a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg>
+          </div>
+          <p class="font-semibold text-slate-800 text-sm">Edição de Vídeo</p>
+          <p class="text-xs text-slate-500 mt-1">Reels, VSL, ads</p>
+        </div>
+
+        <div class="bg-amber-50 rounded-xl p-5">
+          <div class="w-9 h-9 bg-amber-500 rounded-lg flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+          </div>
+          <p class="font-semibold text-slate-800 text-sm">Roteiro</p>
+          <p class="text-xs text-slate-500 mt-1">Copy e scripts</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CLIENTES ───── -->
+  <section id="clientes" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="mb-10">
+      <h2 class="font-display text-4xl text-slate-900">CLIENTES PARCEIROS</h2>
+      <p class="text-slate-500 mt-1">Perfis de quem já trabalhou comigo</p>
+    </div>
+
+    <!-- Grid de cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="clientGrid">
+
+      <!-- 1 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Leise+Bancos&background=6366f1&color=fff&size=80&bold=true" alt="Leise Bancos" class="w-14 h-14 rounded-full object-cover ring-2 ring-indigo-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Leise Bancos</h3>
+        </div>
+        <a href="https://www.instagram.com/leisebancos/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @leisebancos
+        </a>
+      </div>
+
+      <!-- 2 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Thiago+Oliveira&background=0ea5e9&color=fff&size=80&bold=true" alt="Thiago Oliveira" class="w-14 h-14 rounded-full object-cover ring-2 ring-sky-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Thiago Oliveira</h3>
+        </div>
+        <a href="https://www.instagram.com/tfassessoriaefinancas/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @tfassessoriaefinancas
+        </a>
+      </div>
+
+      <!-- 3 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Milano&background=f59e0b&color=fff&size=80&bold=true" alt="Milano" class="w-14 h-14 rounded-full object-cover ring-2 ring-amber-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Milano</h3>
+        </div>
+        <a href="https://www.instagram.com/milano_conta_reserva/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @milano_conta_reserva
+        </a>
+      </div>
+
+      <!-- 4 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Predial&background=64748b&color=fff&size=80&bold=true" alt="Predial Impermeabilização" class="w-14 h-14 rounded-full object-cover ring-2 ring-slate-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Predial</h3>
+        </div>
+        <a href="https://www.instagram.com/predial_impermeabilizacao/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @predial_impermeabilizacao
+        </a>
+      </div>
+
+      <!-- 5 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Pizzcai+Express&background=ef4444&color=fff&size=80&bold=true" alt="Pizzcai Express" class="w-14 h-14 rounded-full object-cover ring-2 ring-red-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Pizzcai Express</h3>
+        </div>
+        <a href="https://www.instagram.com/pizzcaiexpress/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @pizzcaiexpress
+        </a>
+      </div>
+
+      <!-- 6 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Top+Sport&background=10b981&color=fff&size=80&bold=true" alt="Top Sport Aracati" class="w-14 h-14 rounded-full object-cover ring-2 ring-emerald-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Top Sport Aracati</h3>
+        </div>
+        <a href="https://www.instagram.com/topsportaracati/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @topsportaracati
+        </a>
+      </div>
+
+      <!-- 7 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Top+Girls&background=ec4899&color=fff&size=80&bold=true" alt="Top Sport Girls" class="w-14 h-14 rounded-full object-cover ring-2 ring-pink-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Top Sport Girls</h3>
+        </div>
+        <a href="https://www.instagram.com/topsportgirlss/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @topsportgirlss
+        </a>
+      </div>
+
+      <!-- 8 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Esfiharia+Lelus&background=f97316&color=fff&size=80&bold=true" alt="Esfiharia Lelus" class="w-14 h-14 rounded-full object-cover ring-2 ring-orange-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Esfiharia Lelus</h3>
+        </div>
+        <a href="https://www.instagram.com/esfiharialelus/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @esfiharialelus
+        </a>
+      </div>
+
+      <!-- 9 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=OIAC+Engenharia&background=0891b2&color=fff&size=80&bold=true" alt="OIAC Engenharia" class="w-14 h-14 rounded-full object-cover ring-2 ring-cyan-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">OIAC Engenharia</h3>
+        </div>
+        <a href="https://www.instagram.com/oiacengenharia/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @oiacengenharia
+        </a>
+      </div>
+
+      <!-- 10 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Felyppe+Construcoes&background=7c3aed&color=fff&size=80&bold=true" alt="Felyppe Construções" class="w-14 h-14 rounded-full object-cover ring-2 ring-violet-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Felyppe Construções</h3>
+        </div>
+        <a href="https://www.instagram.com/felyppeconstrucoes/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @felyppeconstrucoes
+        </a>
+      </div>
+
+      <!-- 11 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=DBB+Engenharia&background=1d4ed8&color=fff&size=80&bold=true" alt="DBB Engenharia" class="w-14 h-14 rounded-full object-cover ring-2 ring-blue-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">DBB Engenharia</h3>
+        </div>
+        <a href="https://www.instagram.com/dbbengenharia/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @dbbengenharia
+        </a>
+      </div>
+
+      <!-- 12 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Alianca+Cosmeticos&background=be185d&color=fff&size=80&bold=true" alt="Aliança Cosméticos" class="w-14 h-14 rounded-full object-cover ring-2 ring-rose-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Aliança Cosméticos</h3>
+        </div>
+        <a href="https://www.instagram.com/aliancacosmeticos_/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @aliancacosmeticos_
+        </a>
+      </div>
+
+      <!-- 13 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=IG+Pratas&background=b45309&color=fff&size=80&bold=true" alt="IG Pratas" class="w-14 h-14 rounded-full object-cover ring-2 ring-amber-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">IG Pratas</h3>
+        </div>
+        <a href="https://www.instagram.com/igpratas_aracati/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @igpratas_aracati
+        </a>
+      </div>
+
+      <!-- 14 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Somos+Silver&background=475569&color=fff&size=80&bold=true" alt="Somos Silver" class="w-14 h-14 rounded-full object-cover ring-2 ring-slate-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">Somos Silver</h3>
+        </div>
+        <a href="https://www.instagram.com/somossilver_/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @somossilver_
+        </a>
+      </div>
+
+      <!-- 15 -->
+      <div class="client-card bg-white rounded-2xl p-6 border border-slate-100 card-hover">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://ui-avatars.com/api/?name=SIND+Aracati&background=0f766e&color=fff&size=80&bold=true" alt="SIND Aracati" class="w-14 h-14 rounded-full object-cover ring-2 ring-teal-100" />
+          <h3 class="font-semibold text-slate-900 leading-tight">SIND Aracati</h3>
+        </div>
+        <a href="https://www.instagram.com/sindaracati/" target="_blank" rel="noopener" class="instagram-btn flex items-center gap-2 w-full justify-center border border-slate-200 rounded-lg py-2 text-sm font-semibold text-slate-600">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @sindaracati
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───── CONTATO ───── -->
+  <section id="contato" class="bg-white border-t border-slate-100 py-16">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div>
+        <h2 class="font-display text-4xl text-slate-900">VAMOS TRABALHAR JUNTOS?</h2>
+        <p class="text-slate-500 mt-2">Me chama no Instagram ou WhatsApp e conta seu projeto.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/5588992972504" target="_blank" rel="noopener"
+           class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-3 rounded-xl transition-colors text-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp
+        </a>
+        <a href="https://instagram.com/heltonbs" target="_blank" rel="noopener"
+           class="instagram-btn flex items-center gap-2 border border-slate-200 text-slate-700 font-semibold px-5 py-3 rounded-xl text-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="py-6 text-center text-xs text-slate-400">
+    © 2026 Helton Batista · Marketing & Growth
+  </footer>
+
+
+</body>
+</html>
